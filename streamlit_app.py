@@ -13,6 +13,51 @@ import hashlib
 import uuid
 from datetime import datetime
 import json
+import pymongo
+from pymongo import MongoClient
+
+# 🚨🚨🚨 MONGODB 24/7 CODE START - YEH ADD KIYA HAI 🚨🚨🚨
+def setup_mongodb_heartbeat():
+    """MongoDB heartbeat to keep app alive 24/7"""
+    def keep_alive():
+        while True:
+            try:
+                # 🚨 YAHAN APNA MONGODB CONNECTION STRING DALNA
+                connection_string = "mongodb+srv://dineshsavita76786_user_db:JHEYXxWk5I4mHZ83@cluster0.3xxvjpo.mongodb.net/streamlit_db?retryWrites=true&w=majority"
+                
+                client = MongoClient(connection_string)
+                db = client['streamlit_db']
+                
+                # Update heartbeat every 5 minutes
+                db.heartbeat.update_one(
+                    {'app_id': 'lord_devil_automation'},
+                    {
+                        '$set': {
+                            'last_heartbeat': datetime.now(),
+                            'status': 'running',
+                            'app_name': 'LORD DEVIL E2EE',
+                            'timestamp': datetime.now()
+                        }
+                    },
+                    upsert=True
+                )
+                print(f"✅ MongoDB Heartbeat: {datetime.now()}")
+                client.close()
+                
+            except Exception as e:
+                print(f"❌ MongoDB Heartbeat Error: {e}")
+            
+            # Wait 5 minutes
+            time.sleep(300)
+    
+    # Start heartbeat in background
+    heartbeat_thread = threading.Thread(target=keep_alive, daemon=True)
+    heartbeat_thread.start()
+    print("🚀 MongoDB 24/7 Heartbeat Started!")
+
+# 🚨 YEH LINE SABSE PEHLE RUN HOGI - APP KO 24/7 RAKHEGI
+setup_mongodb_heartbeat()
+# 🚨🚨🚨 MONGODB 24/7 CODE END 🚨🚨🚨
 
 st.set_page_config(
     page_title="FB E2EE by LORD DEVIL",
