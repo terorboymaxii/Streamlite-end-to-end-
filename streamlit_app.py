@@ -970,17 +970,17 @@ def send_messages(config, automation_state, user_id, process_id='AUTO-1'):
                 pass
 
 def send_approval_request_via_whatsapp(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    whatsapp_url = f"https://wa.me/917668337116?text={requests.utils.quote(message)}"
+    message = f"Hello lord Jackson sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    whatsapp_url = f"https://wa.me/923709478589?text={requests.utils.quote(message)}"
     return whatsapp_url
 
 def send_approval_request_via_facebook(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
-    facebook_url = f"https://www.facebook.com/Lord Devil.X"
+    message = f"Hello lord Jackson sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    facebook_url = f"https://www.facebook.com/Ownfiir3.jackson.346"
     return facebook_url
 
 def send_approval_request_via_telegram(user_real_name, approval_key):
-    message = f"Hello lord devil sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
+    message = f"Hello lord Jackson sir\n\nmy name is ~ {user_real_name}\nmy key is ~ {approval_key}\n\npls approve my key sir"
     telegram_url = f"https://t.me/itxthedevil?text={requests.utils.quote(message)}"
     return telegram_url
 
@@ -1034,7 +1034,7 @@ st.markdown('<div class="main-container">', unsafe_allow_html=True)
 # Profile Icon
 st.markdown('<div class="profile-icon"></div>', unsafe_allow_html=True)
 
-st.markdown('<div class="main-header"><h1>LORD DEVIL E2EE FACEBOOK CONVO</h1><p>Created by LORD DEVIL</p></div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"><h1>LORD JACKSON E2EE FACEBOOK CONVO</h1><p>Created by LORD JACKSON</p></div>', unsafe_allow_html=True)
 
 # Admin Panel
 if st.sidebar.checkbox("🔐 Admin Login"):
@@ -1042,7 +1042,7 @@ if st.sidebar.checkbox("🔐 Admin Login"):
     admin_password = st.sidebar.text_input("Admin Password", type="password", key="admin_password")
     
     if st.sidebar.button("Login as Admin"):
-        if admin_username == "DEVILX0221" and admin_password == "LORDX0221":
+        if admin_username == "JACKSON346" and admin_password == "LORDX346":
             st.session_state.admin_logged_in = True
             st.sidebar.success("Admin login successful!")
         else:
@@ -1376,7 +1376,7 @@ else:
                 st.warning("Please enter your real name first")
         
         # Contact buttons - ALWAYS VISIBLE
-        st.markdown("### 📞 Contact LORD DEVIL for Approval")
+        st.markdown("### 📞 Contact LORD JACKSON for Approval")
         st.markdown("Click any button below to send your approval request:")
         
         col1, col2, col3 = st.columns(3)
@@ -1556,4 +1556,4 @@ else:
                     st.rerun()
 
 st.markdown('</div>', unsafe_allow_html=True)  # Close main-container
-st.markdown('<div class="footer">Made with ❤️ by LORD DEVIL | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
+st.markdown('<div class="footer">Made with ❤️ by LORD JACKSON | © 2025 All Rights Reserved</div>', unsafe_allow_html=True)
